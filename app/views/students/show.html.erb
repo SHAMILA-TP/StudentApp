@@ -1,0 +1,13 @@
+<h1>Student Details</h1>
+
+<h2><%= @student.name %></h2>
+
+<p><%= @student.age %></p>
+
+<ul>
+<li><%= link_to "Destroy", student_path(@student),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %>
+                  </li>
+                 
+</ul>
